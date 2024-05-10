@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: whitesmoke;
+    display: grid;
+    place-items: center;
+}
+.container{
+    width: 80%;
+    margin:  auto;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2rem;
+}
+
+.person{
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(1, 2,  0.1);
+    padding: 20px;
+
+}
+.person .name small{
+    color: hsl(0, 0%, 50%);   
+}
+.person p{
+    color: hsl(219, 29%, 70%) ;
+}
+.person-1{
+    grid-column: 1/3;
+    background-color:hsl(263, 55%, 52%);
+}
+.person-1 p{
+    color: hsl(0, 0%, 70%);
+}
+
+.person-2{
+    background-color:hsl(217, 19%, 35%) ;
+}
+
+.person-3{
+    background-color:  hsl(0, 0%, 100%);
+    color: hsl(219, 29%, 14%);
+}
+
+
+.person-4{
+    grid-row: 2/3;
+    grid-column: 2/4;
+    background-color: hsl(219, 29%, 14%);
+}
+.person-4 p{
+    color: hsl(0, 0%, 70%);
+}
+
+.person-5{
+    grid-row: 1/3;
+    grid-column:4/5 ;
+    background-color:  hsl(0, 0%, 100%);
+    color:  hsl(219, 29%, 14%)  ;
+}
+.person-5 p{
+    color: (219, 29%, 70%) ;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        display: block;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    .person {
+        margin-bottom: 20px; 
+    }
+}
+
+.head{
+    display: grid;
+    grid-template-columns:1fr 4fr ;
+    margin-bottom:30px ;
+}
+
+
+.head .name{
+    align-content: center;
+}
+img{
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.person h4{
+    margin-bottom: 30px;
+}
+
+.person p{
+    margin-bottom: 30px;
+}
